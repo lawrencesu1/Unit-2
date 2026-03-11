@@ -36,7 +36,7 @@ void draw() {
      }
   }
   if(droppingBomb == 2) {
-    mushroomCloud(300,300, x, y); 
+    mushroomCloud(300,300); 
     x = x+3;
     y = y+3;
   }
@@ -78,6 +78,7 @@ void mushroomCloud(int x, int y) {
   pushMatrix();
   translate(x,y);
   fill(230,40,100);
-  circle(30,20,20);
+  circle(30,20,200);
+  circle(20,30,100);
   popMatrix();
 }
